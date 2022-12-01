@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+    <body>
+      <section class="header">
+
+        <a href="#" class="logo"><img src="img/logo.png">FootBall Blog </a>
+        <nav class="navbar">
+         <a href="home.html"><i class="fa-solid fa-house"></i> home</a>
+         <a href="about.html"><i class="fa-solid fa-address-card"></i> about</a>
+         <a href="contactus.html"> <i class="fa-solid fa-user-plus"></i>contact us</a>
+      </nav>
+     </section>
+     <div class="title">
+      CONTACT US
+    </div>
+     <section class="wrapper">
+      <div class="aside1">
+         <img src="img/Capture.JPG">
+      </div>
+      <form id="form"> 
+         <div class="form-control">
+            <label>Full name</label>
+            <input type="text" placeholder="Username" id="username">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                  <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                  <small>Wrong. Set the correct inputs!</small>
+         </div>  
+          <div class="form-control">
+            <label>Email</label>
+            <input type="email" placeholder="Email" id="email">
+            <i class="fa fa-check-circle"></i>
+                  <i class="fa fa-exclamation-circle"></i>
+                  <small>Wrong. Set the correct inputs!</small>
+         </div> 
+        <div class="form-control">
+            <label>Message</label>
+            <textarea class="textarea" required></textarea>
+         </div> 
+            <button onclick="validateForm()">SUBMIT!</button>
+            <button onsubmit="clear()">Clear!</button>
+          </div>
+         </form>
+        </section>
+
+      <div class="footer">
+        <div class="icons-container">
+           <div class="icons">
+             <i1 class="fab fa-weixin"></i1>
+              <h3>Support</h3>
+              <p>24/7</p>
+           </div>
+
+           <div class="icons">
+              <i2 class="fas fa-phone"></i2>
+              <h3>Phone</h3>
+              <p>+35568-123-7890</p>
+              <p>+35569-244-8333</p>
+           </div>
+     
+           <div class="icons">
+              <i3 class="fas fa-envelope"></i3>
+              <h3>Email</h3>
+              <p>FootBallBlog@gmail.com</p>
+           </div>
+     
+           <div class="icons">
+              <i4 class="fas fa-map"></i4>
+              <h3>Address</h3>
+              <p>Rruga Myslym Shyrri</p>
+           </div>
+     
+        </div>
+     
+        <div class="share">
+           <a1 href="#" class="fab fa-facebook-f"></a1>
+           <a2 href="#" class="fab fa-twitter"></a2>
+           <a3 href="#" class="fab fa-instagram"></a3>
+           <a4 href="#" class="fab fa-linkedin"></a4>
+        </div>
+     
+        <div class="credit"> Created by <span>FootBall Blog</span> | All rights reserved! </div>
+     
+      </div>
+    <script src="javascript/contactus.js"></script>
+</div>
+</body>
+</html>
+

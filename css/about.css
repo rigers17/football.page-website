@@ -1,0 +1,304 @@
+:root{
+    --gray:#797979;
+    --black:#222;
+    --white:#fff;
+    --green:#06a800;
+    --light-black:#666;
+    --light-white:#ccc;
+    --light-bg:#f5f5f5;
+    --dark-bg:rgba(0,0,0,.7);
+    --border:.1rem solid #aaa;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+ }
+ 
+*{
+    font-family: 'Dosis', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+    text-transform: capitalize;
+ }
+ 
+ * > img{
+    user-select: none;
+    pointer-events: none;
+ }
+ 
+ html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+ }
+ 
+ html::-webkit-scrollbar{
+    width: 1rem;
+ }
+ 
+ html::-webkit-scrollbar-track{
+    background-color: var(--white);
+ }
+ 
+ html::-webkit-scrollbar-thumb{
+    background-color: gray;
+ }
+ 
+ section{
+    padding:5rem 10%;
+ }
+.header{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: box-shadow;
+    position: sticky;
+    top:0; left:0; right: 0;
+    background: white;
+    z-index: 1000;
+ }
+ 
+ .header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);
+ }
+ 
+ .header .logo img{
+    width: 55px;
+    padding-right: 15px;
+ }
+ 
+ .header .navbar a{
+    font-size: 2rem;
+    padding: 2rem;
+    color:var(--light-black);
+    animation:fadeIn 1s cubic-bezier(.54,1.3,.63,1.34) .2s backwards;
+ }
+ 
+ .header .navbar a:hover{
+     color: rgb(0, 0, 0);
+     font-weight: bold;
+     background-color: rgb(175, 255, 188);
+ }
+ 
+ .about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    background-color: #f8f5f5;
+ }
+ 
+ .about .image{
+    flex:1 1 41rem;
+ }
+ 
+ .about .image img{
+    width: 100%;
+ }
+ 
+ .about .content{
+    flex:1 1 41rem;
+ }
+ 
+ .about .content .title{
+    font-size: 4rem;
+    color:black;
+ }
+ 
+ .about .content p{
+    font-size: 1.7rem;
+    color: light-black;
+    padding:1rem 0;
+    line-height: 2;
+ }
+ 
+ .about .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin-top: 3rem;
+ }
+ 
+ .about .content .icons-container .icons{
+    flex:1 1 16rem;
+    text-align: center;
+    background: light-bg;
+    padding:3rem 2rem;
+ }
+ 
+ .about .content .icons-container .icons img{
+    height: 5rem;
+ }
+ 
+ .about .content .icons-container .icons h3{
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: light-black;
+    font-weight: normal;
+ }
+ .footer{
+    text-align: center; 
+    margin-bottom: 30px;
+ }
+ 
+ .footer .icons-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:2rem;
+ }
+ 
+ .footer .icons-container .icons{
+    text-align: center;
+    padding-top:60px;
+ }
+ 
+ .footer .icons-container .icons i1{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: orange;
+    color:var(--white);
+    margin-bottom: .5rem;
+    line-height: 5.8rem;
+    font-size: 2rem;
+ }
+ .footer .icons-container .icons i2{
+     height: 5rem;
+     width: 5rem;
+     border-radius: 50%;
+     background: green;
+     color:var(--white);
+     margin-bottom: .5rem;
+     line-height: 5.8rem;
+     font-size: 2rem;
+  }
+  .footer .icons-container .icons i3{
+     height: 5rem;
+     width: 5rem;
+     border-radius: 50%;
+     background: red;
+     color:var(--white);
+     margin-bottom: .5rem;
+     line-height: 5.8rem;
+     font-size: 2rem;
+  }
+  .footer .icons-container .icons i4{
+     height: 5rem;
+     width: 5rem;
+     border-radius: 50%;
+     background: -webkit-linear-gradient(45deg, #b6b6b6 0%,#5ee63c 25%,#b68f56 50%,#919191 75%,#ccb08b 100%);
+     color:var(--white);
+     margin-bottom: .5rem;
+     line-height: 5.8rem;
+     font-size: 2rem;
+  }
+ 
+ .footer .icons-container .icons h3{
+    font-size: 2rem;
+    color:var(--black);
+    padding:1rem 0;
+ }
+ 
+ .footer .icons-container .icons p{
+    line-height: 1.5;
+    font-size: 1.7rem;
+    color:var(--light-black);
+    text-transform: none;
+ }
+ 
+ .footer .share{
+    margin-top: 10px;
+ }
+ 
+ .footer .share a1{
+    height: 6rem;
+    width: 6rem;
+    line-height: 5.8rem;
+    color:var(--white);
+    background: blue;
+    margin:0 .3rem;
+    font-size: 2.5rem;
+ }
+ .footer .share a2{
+     height: 6rem;
+     width: 6rem;
+     line-height: 5.8rem;
+     color:var(--white);
+     background: rgb(68, 208, 255);
+     margin:0 .3rem;
+     font-size: 2.5rem;
+  }  
+  .footer .share a3{
+     height: 6rem;
+     width: 6rem;
+     line-height: 5.8rem;
+     color:var(--white);
+     background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+     margin:0 .3rem;
+     font-size: 2.5rem;
+  }  
+  .footer .share a4{
+     height: 6rem;
+     width: 6rem;
+     line-height: 5.8rem;
+     color:var(--white);
+     background: rgb(0, 148, 247);
+     margin:0 .3rem;
+     font-size: 2.5rem;
+  }  
+ 
+ .footer .share a1:hover{
+    background: yellowgreen;
+    animation:fadeIn .2s cubic-bezier(.54,1.3,.63,1.34) .4s forwards;
+ }
+ .footer .share a2:hover{
+     background: rgb(205, 120, 50);
+     animation:fadeIn .2s cubic-bezier(.54,1.3,.63,1.34) .4s forwards;
+  }
+  .footer .share a3:hover{
+     background: rgb(218, 0, 0);
+     animation:fadeIn .2s cubic-bezier(.54,1.3,.63,1.34) .4s forwards;
+  }
+  .footer .share a4:hover{
+     background: rgb(50, 0, 189);
+     animation:fadeIn .2s cubic-bezier(.54,1.3,.63,1.34) .4s forwards;
+  }
+ 
+ .footer .credit{
+    margin-top: 5px;
+    padding-top: 10px;
+    border-top: var(--border);
+    font-size: 2rem;
+    color:var(--light-black);
+ }
+ 
+ .footer .credit span{
+    color:green;
+    font-weight: bolder;
+ }
+ 
+ 
+@media (max-width:768px){
+
+   .header .navbar{
+      position: absolute;
+      top:99%; left:0; right:0;
+      background-color: var(--white);
+      border-top: var(--border);
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .navbar.active{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+   .header .navbar a{
+      display: block;
+      margin:2rem;
+   }
+}
